@@ -1,1 +1,20 @@
-
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIOREX — Área do cliente</title><link rel="stylesheet" href="/style.css">
+</head><body>
+<header><a class="brand" href="/">VIO<span>REX</span></a><nav><button class="ghost" id="loginOpen">Entrar</button><button id="registerOpen">Criar conta</button></nav></header>
+<main>
+<section class="hero"><div class="eyebrow">TECNOLOGIA • TRANSPARÊNCIA • CONTROLE</div>
+<h1>Bem-vindo à <span>VIOREX.</span></h1><p>Uma plataforma digital com acesso individual, cadastro seguro e informações claras.</p>
+<div class="actions"><button id="heroRegister">Criar minha conta</button><a class="linkbtn" href="#areas">Conhecer a plataforma</a></div></section>
+<div class="notice"><b>INFORMAÇÃO IMPORTANTE:</b> esta versão permite cadastro e login reais quando instalada em um servidor com HTTPS. Não recebe depósitos, não movimenta saldos e não promete rendimentos. Recursos financeiros só poderão ser ativados após estrutura jurídica, operacional e autorização aplicável.</div>
+<section id="areas"><h2>Conheça a plataforma</h2><div class="grid">
+<article class="tile"><div class="symbol">01</div><h3>Conta individual</h3><p>Crie seu acesso com e-mail e senha e consulte seus dados.</p></article>
+<article class="tile"><div class="symbol">02</div><h3>Área do cliente</h3><p>Visualize seu perfil e acompanhe informações da sua conta.</p></article>
+<article class="tile"><div class="symbol">03</div><h3>Informações claras</h3><p>Consulte as regras e os avisos da plataforma antes de qualquer contratação.</p></article>
+</div></section>
+<section class="account" id="account" hidden><div><div class="eyebrow">ÁREA DO CLIENTE</div><h2>Olá, <span id="userName"></span></h2><p id="userEmail" class="muted"></p><p class="notice">Sua conta está ativa. Nenhum saldo ou investimento é movimentado por esta versão.</p><button class="ghost" id="logout">Sair da conta</button></div></section>
+</main><footer>VIOREX © <span id="year"></span> · Plataforma digital</footer>
+<div class="modal" id="modal"><div class="dialog"><button class="close" id="close">×</button><div class="eyebrow">ACESSO VIOREX</div><h2 id="formTitle">Criar conta</h2><form id="authForm"><label id="nameLabel">Nome completo<input id="name" autocomplete="name" required minlength="2"></label><label>E-mail<input id="email" type="email" autocomplete="email" required></label><label>Senha<input id="password" type="password" autocomplete="new-password" required minlength="10"></label><p class="muted tiny" id="passwordHint">Use pelo menos 10 caracteres.</p><button class="full" id="submit">Criar conta</button><p class="error" id="error"></p></form><p class="switch" id="switchMode">Já tem conta? <a href="#">Entrar</a></p></div></div>
+<script src="/app.js"></script></body></html>
